@@ -1,7 +1,7 @@
 local PLUGIN = PLUGIN
-PLUGIN.name = "HealthBarEnhanced"
+PLUGIN.name = "HealthBarHud"
 PLUGIN.author = "cheerio1521"
-PLUGIN.description = "Just adds a Health Bar that looks decent, you don't have to credit me if your going to modify it or use it."
+PLUGIN.description = "Just adds a Health Bar, that's it. Nothing else just a health bar."
 
 surface.CreateFont("HUD_Font", {
     font = "Arial",
@@ -45,5 +45,3 @@ function PLUGIN:HUDPaint()
 
     draw.SimpleTextOutlined("Health: " .. math.Round(smoothHealth), "HUD_Font", x + width / 2, y + height / 2, Color(255, 255, 255, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER, 2, Color(0, 0, 0, 150))
 end
-
-
